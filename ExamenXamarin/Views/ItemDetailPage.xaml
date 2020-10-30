@@ -12,8 +12,7 @@
   <StackLayout Spacing="20" Padding="15">
         <Label Text="Usuario:" FontSize="Medium" />
     <Label Text="{Binding UserName}" FontSize="Small"/>
-        <!--<Label Text="Description:" FontSize="Medium" />
-    <Label Text="{Binding Password}" FontSize="Small"/>-->
+        
     </StackLayout>
     
 </ContentPage>

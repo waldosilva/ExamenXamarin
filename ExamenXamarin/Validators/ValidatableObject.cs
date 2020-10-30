@@ -9,7 +9,7 @@ namespace ExamenXamarin.Validators
 {
   public class ValidatableObject<T> : IValidatable<T>
   {
-    //public event PropertyChangedEventHandler PropertyChanged;
+    
     protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",
             Action onChanged = null)
@@ -36,7 +36,7 @@ namespace ExamenXamarin.Validators
 
     public List<IValidationRule<T>> Validations { get; } = new List<IValidationRule<T>>();
 
-    //public List<string> Errors { get; set; } = new List<string>();
+
     private List<string> errors = new List<string>();
     public List<string> Errors
     {

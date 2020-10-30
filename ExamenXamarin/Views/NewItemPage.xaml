@@ -16,8 +16,6 @@
   <ContentPage.Content>
       
         <StackLayout Spacing="3" Padding="15">
-            <!--<Label Text="User" FontSize="Medium" />
-      <Entry Text="{Binding UserName, Mode=TwoWay}" FontSize="Medium" />-->
       <Entry Text="{Binding UserName.Value, Mode=TwoWay}" 
                        Placeholder="UserName">
         <Entry.Behaviors>
@@ -38,16 +36,6 @@
       <Label Text="{Binding Password.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
                         Style="{StaticResource ErrorTextStyle}"/>
 
-      <!--<Label Text="Password" FontSize="Medium" />
-      <Entry Text="{Binding Password, Mode=TwoWay}" IsPassword="True" FontSize="Medium" >
-        <Entry.Behaviors>
-          <local:PassValidator  IsValid="{Binding IsValid, Mode=OneWayToSource}"  />
-        </Entry.Behaviors>
-      </Entry-->
-
-      <!--<Label Text="{Binding Errors,Converter={StaticResource FirstValidationErrorConverter}}"
-                        
-                        Style="{StaticResource ErrorTextStyle}"/>-->
       <Label Text="{Binding Errors, Converter={StaticResource FirstValidationErrorConverter}}"
              
                          Style="{StaticResource ErrorTextStyle}"/>

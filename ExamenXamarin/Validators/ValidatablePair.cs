@@ -17,7 +17,7 @@ namespace ExamenXamarin.Validators
       set { SetProperty(ref isValid, value); }
     }
 
-    //public List<string> Errors { get; set; } = new List<string>();
+    
     private List<string> errors = new List<string>();
     public List<string> Errors
     {
@@ -30,7 +30,7 @@ namespace ExamenXamarin.Validators
 
     public ValidatableObject<T> Item2 { get; set; } = new ValidatableObject<T>();
 
-    //public event PropertyChangedEventHandler PropertyChanged;
+
     protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",
             Action onChanged = null)

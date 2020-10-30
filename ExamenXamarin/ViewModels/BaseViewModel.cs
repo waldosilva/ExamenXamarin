@@ -6,13 +6,13 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 using ExamenXamarin.Models;
-using ExamenXamarin.Services;
+
 
 namespace ExamenXamarin.ViewModels
 {
   public class BaseViewModel : INotifyPropertyChanged
   {
-    //public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+    
 
     bool isBusy = false;
     bool isValid = true;

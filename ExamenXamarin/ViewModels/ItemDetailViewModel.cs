@@ -83,12 +83,7 @@ namespace ExamenXamarin.ViewModels
     }
     public ItemDetailViewModel()
     {
-      //Title = "Usuario";
-      //Items = new ObservableCollection<Usuario>();
-      //LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
-      //ItemTapped = new Command<Usuario>(OnItemSelected);
-
+      
       EditItemCommand = new Command(OnEditItem);
       DeleteCommand = new Command(OnDelete);
 
